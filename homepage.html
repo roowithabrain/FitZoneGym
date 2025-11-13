@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - FitZone Gym</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <meta name="description" content="FitZone Gym website offering specialized trainers and different memberships.">
+    <meta name="keywords" content="FitZone Gym, Gym memberships, Gym Website, Gym Trainers, Gyms near me">
+
+<style>
+    body {
+        font-family: 'Helvatica', Arial, Helvetica, sans-serif;
+        background-color: #A7BD9A;
+    }
+
+    .navbar {
+        background-color: #174249;
+    }
+
+    .navbar-brand {
+        color: #A7BD9A;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+
+    .nav-link {
+        color: #A7BD9A;
+    }
+
+    .nav-link:hover {
+        color: #F4F1E1;
+    }
+
+    .btn-login, .btn-signup {
+      border-radius: 20px;
+      padding: 5px 15px;
+      margin-left: 10px;
+    }
+
+    .btn-login {
+      background-color: transparent;
+      border: 1px solid #A7BD9A;
+      color: #A7BD9A;
+    }
+
+    .btn-login:hover {
+      background-color: #F4F1E1;
+      color: #174249;
+    }
+
+    .btn-signup {
+      background-color: #A7BD9A;
+      color: #F4F1E1;
+      border: none;
+    }
+
+    .btn-signup:hover {
+      background-color: #F4F1E1;
+      color: #174249;
+    }
+
+    .carousel-item {
+      height: 80vh;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    .carousel-caption {
+      background-color: #F4F1E1(0, 0, 0, 0.6);
+      border-radius: 10px;
+      padding: 20px;
+    }
+
+    .membership {
+      padding: 60px 0;
+      background-color: #174249;
+      text-align: center;
+    }
+
+    .membership h2 {
+      color: #A7BD9A;
+      margin-bottom: 30px;
+    }
+
+    .card {
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .about-gym {
+      background-color: #F4F1E1;
+      color: #174249;
+      padding: 80px 20px;
+    }
+
+    .about-title {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #174249;
+      margin-bottom: 20px;
+    }
+
+    .about-text {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      max-width: 800px;
+      margin: 0 auto;
+      color: #174249;
+    }
+
+    .member-reviews {
+      background-color: #174249;
+      color: #F4F1E1;
+      padding: 80px 20px;
+    }
+
+    .reviews-title {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #A7BD9A;
+      margin-bottom: 40px;
+    }
+
+    .review-card {
+      background-color: #A7BD9A;
+      color: #174249;
+      border-radius: 15px;
+      padding: 30px;
+      margin: 40px auto;
+      max-width: 700px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .review-name {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .review-text {
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+      line-height: 1.7;
+    }
+
+    .review-img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+
+    footer {
+      background-color: #174249;
+      color: #A7BD9A;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 50px;
+    }
+</style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="homepage.html">FitZone Gym</a>
+              <button style="color: #A7BD9A;" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="homepage.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="memberships.html">Memberships</a></li>
+                    <li class="nav-item"><a class="nav-link" href="trainers.html">Trainers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item">
+                    <a href="login.html" class="btn btn-login">Login</a>
+                    </li>
+                    <li class="nav-item">
+                    <a href="signup.html" class="btn btn-signup">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="gymCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" style="background-image: url('https://images.pexels.com/photos/703016/pexels-photo-703016.jpeg?cs=srgb&dl=pexels-victorfreitas-703016.jpg&fm=jpg&_gl=1*1otda4c*_ga*OTYzNTMwNDgwLjE3NjEyMTk5NTI.*_ga_8JE65Q40S6*czE3NjE4MDgxOTUkbzIkZzEkdDE3NjE4MDgyMTAkajQ1JGwwJGgw');">
+        <div class="carousel-caption">
+          <h1 style="font-weight: bold;">Welcome to FitZone Gym</h1>
+          <p>Transform your mind and body with our professional trainers.</p>
+        </div>
+      </div>
+      <div class="carousel-item" style="background-image: url('https://images.pexels.com/photos/669584/pexels-photo-669584.jpeg?cs=srgb&dl=pexels-goumbik-669584.jpg&fm=jpg&_gl=1*nt3e1h*_ga*OTYzNTMwNDgwLjE3NjEyMTk5NTI.*_ga_8JE65Q40S6*czE3NjEyMTk5NTEkbzEkZzEkdDE3NjEyMjAxNjMkajUxJGwwJGgw');">
+        <div class="carousel-caption">
+          <h1 style="font-weight: bold;">Personal Training Programs</h1>
+          <p>Get personalized workout plans for your fitness goals.</p>
+        </div>
+      </div>
+      <div class="carousel-item" style="background-image: url('https://images.unsplash.com/photo-1594737625785-cfdb2f0f7f1c');">
+        <div class="carousel-caption">
+          <h1 style="font-weight: bold;">Join Our Awesome Community!</h1>
+          <p>Become part of a fitness family that motivates you daily!</p>
+        </div>
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#gymCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#gymCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <section class="membership">
+    <div class="container">
+      <h2>Membership & Training Plans We Offer</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card p-3">
+            <h4>Basic Plan</h4>
+            <p>Access to all gym equipment and facilities.</p>
+            <p><strong>$20/month</strong></p>
+            <a href="#" class="btn btn-signup">Join Now</a>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card p-3">
+            <h4>Pro Plan</h4>
+            <p>Includes group classes and nutrition guidance.</p>
+            <p><strong>$40/month</strong></p>
+            <a href="#" class="btn btn-signup">Get Started</a>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card p-3">
+            <h4>Personal Training</h4>
+            <p>One-on-one sessions with certified trainers.</p>
+            <p><strong>$60/month</strong></p>
+            <a href="#" class="btn btn-signup">Book Trainer</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="about-gym py-5">
+  <div class="container text-center">
+    <h2 style="font-weight: bold; color: #174249;" class="about-title">MORE THAN JUST A GYM</h2>
+    <p class="about-text">
+      At FitZone Gym, you get way more than just access to weights and treadmills.
+      We offer flexible memberships - from students to professionals, expert trainers, and 24/7 access! But it’s not only about fitness, it’s about community. 
+      Build your confidence with us, meet supportive and like-minded people, and we hope this becomes a place where you can focus on becoming the best version of yourself!
+      <em>More than a gym — it’s your FitZone.</em> </p>
+  </div>
+</section>
+
+<section class="member-reviews py-5">
+  <div class="container text-center">
+    <h2 class="reviews-title mb-5">WHAT OUR MEMBERS ARE SAYING</h2>
+
+    <div class="review-card">
+      <h4 class="review-name">SEAN</h4>
+      <p class="review-text">
+        "FitZone gives me more than just a workout. I joined during a tough time, and it’s helped me regain back my confidence and energy. My legs might complain after leg day, but my mind feels great every single time!"
+      </p>
+      <img src="https://images.pexels.com/photos/3763877/pexels-photo-3763877.jpeg" alt="Augustine at gym" class="review-img">
+    </div>
+
+    <div class="review-card">
+      <h4 class="review-name">CLAIRE</h4>
+      <p class="review-text">
+        "I've made so many friends at FitZone, even my trainer, god bless Sara Amjad, feels like family now! The classes push me to my limits, but in the best way. I’ve lost weight during my cardio sessions and gained confidence."
+      </p>
+    </div>
+
+    <div class="review-card">
+      <h4 class="review-name">LIZ</h4>
+      <p class="review-text">
+        "I used to find gyms intimidating, but FitZone feels like home.  Everyone is welcoming, and I love that I can join new classes anytime. I’ve never felt stronger or happier!"
+      </p>
+    </div>
+  </div>
+</section>
+
+<footer>
+    <p>© 2025 FitZone Gym. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+
+
+
+</html>

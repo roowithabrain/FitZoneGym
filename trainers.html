@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Trainers - FitZone Gym</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <meta name="description" content="Meet FitZone Gym’s certified fitness trainers — experts in strength, cardio, and wellness. View schedules and contact our trainers today!">
+  <meta name="keywords" content="FitZone Gym trainers, personal trainers, fitness coaches, workout instructors, gym staff, fitness experts">
+
+  <style>
+    body {
+      font-family: 'Helvetica', Arial, sans-serif;
+      background-color: #A7BD9A;
+      color: #174249;
+    }
+
+    .navbar {
+      background-color: #174249;
+    }
+
+    .navbar-brand {
+      color: #A7BD9A;
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+
+    .nav-link {
+      color: #A7BD9A;
+    }
+
+    .nav-link:hover {
+      color: #F4F1E1;
+    }
+
+    .btn-login, .btn-signup {
+      border-radius: 20px;
+      padding: 5px 15px;
+      margin-left: 10px;
+    }
+
+    .btn-login {
+      background-color: transparent;
+      border: 1px solid #A7BD9A;
+      color: #A7BD9A;
+    }
+
+    .btn-login:hover {
+      background-color: #F4F1E1;
+      color: #174249;
+    }
+
+    .btn-signup {
+      background-color: #A7BD9A;
+      color: #F4F1E1;
+      border: none;
+    }
+
+    .btn-signup:hover {
+      background-color: #F4F1E1;
+      color: #174249;
+    }
+
+    .trainers-header {
+      background-color: #A7BD9A;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .trainers-header h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+
+    .trainers-header p {
+      font-style: italic;
+      font-size: 1.1rem;
+    }
+
+    .trainer-card {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      padding: 25px;
+      margin-bottom: 30px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
+    }
+
+    .trainer-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 15px rgba(0,0,0,0.25);
+    }
+
+    .trainer-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border: 3px solid #A7BD9A;
+    }
+
+    .trainer-card h3 {
+      font-weight: bold;
+      color: #174249;
+      margin-bottom: 5px;
+    }
+
+    .trainer-specialty {
+      font-style: italic;
+      color: #4F5860;
+      margin-bottom: 10px;
+    }
+
+    .trainer-email {
+      color: #174249;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .trainer-email:hover {
+      text-decoration: underline;
+    }
+
+    .availability {
+      background-color: #A7BD9A;
+      color: #174249;
+      padding: 8px;
+      border-radius: 8px;
+      margin-top: 10px;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+
+    footer {
+      background-color: #174249;
+      color: #A7BD9A;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="homepage.html">FitZone Gym</a>
+      <button style="color: #A7BD9A;"class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="homepage.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="memberships.html">Memberships</a></li>
+          <li class="nav-item"><a class="nav-link active" href="trainers.html">Trainers</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a href="login.html" class="btn btn-login">Login</a></li>
+          <li class="nav-item"><a href="signup.html" class="btn btn-signup">Sign Up</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="trainers-header">
+    <h1>Meet Our Trainers!</h1>
+    <p>Certified professionals dedicated to helping you achieve your fitness goals.</p>
+  </section>
+
+  <section class="container py-5">
+    <div class="row text-center">
+      <div class="col-md-4">
+        <div class="trainer-card">
+          <img src="https://images.pexels.com/photos/1865131/pexels-photo-1865131.jpeg?cs=srgb&dl=pexels-muribotelho-1865131.jpg&fm=jpg&_gl=1*15p8um2*_ga*OTYzNTMwNDgwLjE3NjEyMTk5NTI.*_ga_8JE65Q40S6*czE3NjE4MjgzMDYkbzMkZzEkdDE3NjE4MzA3OTckajQyJGwwJGgw" class="trainer-img" alt="Trainer 1">
+          <h3>Alex Johnson</h3>
+          <p class="trainer-specialty">Strength Expert</p>
+          <a href="mailto:alex@fitzone.com" class="trainer-email">alexjohnson123@fitzone.com</a>
+          <div class="availability">Mon - Fri: 9 AM - 5 PM</div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="trainer-card">
+          <img src="https://images.pexels.com/photos/3076509/pexels-photo-3076509.jpeg?cs=srgb&dl=pexels-jonathanborba-3076509.jpg&fm=jpg&_gl=1*14lst9e*_ga*OTYzNTMwNDgwLjE3NjEyMTk5NTI.*_ga_8JE65Q40S6*czE3NjE4MjgzMDYkbzMkZzEkdDE3NjE4MzAyNDQkajI0JGwwJGgw" class="trainer-img" alt="Trainer 2">
+          <h3>Maria Lopez</h3>
+          <p class="trainer-specialty">Yoga & Flexibility Coach</p>
+          <a href="mailto:maria@fitzone.com" class="trainer-email">mariafromgym@gmail.com</a>
+          <div class="availability">Tue - Sat: 8 AM - 3 PM</div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="trainer-card">
+          <img src="https://images.pexels.com/photos/8937908/pexels-photo-8937908.jpeg?cs=srgb&dl=pexels-mikhail-nilov-8937908.jpg&fm=jpg&_gl=1*3jmjwr*_ga*OTYzNTMwNDgwLjE3NjEyMTk5NTI.*_ga_8JE65Q40S6*czE3NjE4MjgzMDYkbzMkZzEkdDE3NjE4MzA3MDEkajU1JGwwJGgw" class="trainer-img" alt="Trainer 3">
+          <h3>Sara Amjad</h3>
+          <p class="trainer-specialty">Cardio & HIIT Specialist</p>
+          <a href="mailto:daniel@fitzone.com" class="trainer-email">saraamjad22@fitzone.com</a>
+          <div class="availability">Mon - Fri: 6 AM - 2 PM</div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="trainer-card">
+          <img src="https://images.pexels.com/photos/1886487/pexels-photo-1886487.jpeg?cs=srgb&dl=pexels-eduardo-romero-817034-1886487.jpg&fm=jpg&_gl=1*llcqwf*_ga*OTYzNTMwNDgwLjE3NjEyMTk5NTI.*_ga_8JE65Q40S6*czE3NjE4MjgzMDYkbzMkZzEkdDE3NjE4MzAwMTYkajU5JGwwJGgw" class="trainer-img" alt="Trainer 4">
+          <h3>Sarah Ahmed</h3>
+          <p class="trainer-specialty">Weight Loss & Nutrition Coach</p>
+          <a href="mailto:sarah@fitzone.com" class="trainer-email">sarahahmedfitzone@gmail.com</a>
+          <div class="availability">Wed - Sun: 10 AM - 6 PM</div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="trainer-card">
+          <img src="https://images.pexels.com/photos/4720309/pexels-photo-4720309.jpeg?cs=srgb&dl=pexels-ketut-subiyanto-4720309.jpg&fm=jpg&_gl=1*17clm0w*_ga*OTYzNTMwNDgwLjE3NjEyMTk5NTI.*_ga_8JE65Q40S6*czE3NjE4MjgzMDYkbzMkZzEkdDE3NjE4MzA4MzckajIkbDAkaDA." class="trainer-img" alt="Trainer 5">
+          <h3>James Patel</h3>
+          <p class="trainer-specialty">CrossFit & Endurance Coach</p>
+          <a href="mailto:james@fitzone.com" class="trainer-email">thejamespatel@gmail.com</a>
+          <div class="availability">Mon - Sat: 7 AM - 4 PM</div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="trainer-card">
+          <img src="https://images.pexels.com/photos/2294361/pexels-photo-2294361.jpeg?cs=srgb&dl=pexels-823sl-2294361.jpg&fm=jpg&_gl=1*7ty4mc*_ga*OTYzNTMwNDgwLjE3NjEyMTk5NTI.*_ga_8JE65Q40S6*czE3NjE4MjgzMDYkbzMkZzEkdDE3NjE4MzA0MzMkajMyJGwwJGgw" class="trainer-img" alt="Trainer 6">
+          <h3>Li Sun</h3>
+          <p class="trainer-specialty">Pilates & Core Strength Coach</p>
+          <a href="mailto:olivia@fitzone.com" class="trainer-email">lisuntrainer@fitzone.com</a>
+          <div class="availability">Mon - Fri: 11 AM - 7 PM</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 FitZone Gym. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memberships - FitZone Gym</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <meta name="description" content="Explore FitZone Gym's membership plans, including personal training and group programs. Join now to start your fitness journey!">
+    <meta name="keywords" content="FitZone Gym memberships, gym pricing, personal training, fitness classes, gym offers">
+
+  <style>
+    body {
+      font-family: 'Helvetica', Arial, sans-serif;
+      background-color: #A7BD9A;
+    }
+
+    .navbar {
+      background-color: #174249;
+    }
+
+    .navbar-brand {
+      color: #A7BD9A;
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+
+    .nav-link {
+      color: #A7BD9A;
+    }
+
+    .nav-link:hover {
+      color: #F4F1E1;
+    }
+
+    .btn-login, .btn-signup {
+      border-radius: 20px;
+      padding: 5px 15px;
+      margin-left: 10px;
+    }
+
+    .btn-login {
+      background-color: transparent;
+      border: 1px solid #A7BD9A;
+      color: #A7BD9A;
+    }
+
+    .btn-login:hover {
+      background-color: #F4F1E1;
+      color: #174249;
+    }
+
+    .btn-signup {
+      background-color: #A7BD9A;
+      color: #F4F1E1;
+      border: none;
+    }
+
+    .btn-signup:hover {
+      background-color: #F4F1E1;
+      color: #174249;
+    }
+
+    .membership-header {
+      background-color: #A7BD9A;
+      color: #174249;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .membership-header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .membership-header p {
+      font-size: 1.1rem;
+    }
+
+    .plan-card {
+      background-color: #fff;
+      border-radius: 12px;
+      padding: 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+
+    .plan-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .plan-card h3 {
+      color: #174249;
+      margin-bottom: 15px;
+    }
+
+    .plan-card ul {
+      list-style-type: none;
+      padding: 0;
+      color: #174249;
+    }
+
+    .plan-card li {
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #174249;
+      margin: 20px 0;
+    }
+
+    footer {
+      background-color: #174249;
+      color: #A7BD9A;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="homepage.html">FitZone Gym</a>
+      <button style="color: #A7BD9A;" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="homepage.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="memberships.html">Memberships</a></li>
+          <li class="nav-item"><a class="nav-link active" href="trainers.html">Trainers</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a href="login.html" class="btn btn-login">Login</a></li>
+          <li class="nav-item"><a href="signup.html" class="btn btn-signup">Sign Up</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="membership-header">
+    <h1 style="font-weight: bold;">Membership Plans</h1>
+    <p style="font-style: italic;">Choose the plan that fits your fitness goals and lifestyle!</p>
+  </section>
+
+  <section class="container py-5">
+    <div class="row text-center">
+      <div class="col-md-4">
+        <div class="plan-card">
+          <h3 style="font-weight: bold;">Basic Plan</h3>
+          <ul>
+            <li>Access to gym equipment</li>
+            <li>Locker and shower access</li>
+            <li>No personal training</li>
+          </ul>
+          <p class="price">$20/month</p>
+          <a href="signup.html" class="btn btn-signup">Join Now</a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="plan-card">
+          <h3 style="font-weight: bold;">Pro Plan</h3>
+          <ul>
+            <li>All Basic Plan benefits</li>
+            <li>Group fitness classes</li>
+            <li>Diet consultation</li>
+          </ul>
+          <p class="price">$40/month</p>
+          <a href="signup.html" class="btn btn-signup">Get Started</a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="plan-card">
+          <h3 style="font-weight: bold;">Personal Training</h3>
+          <ul>
+            <li>1-on-1 training with certified coach</li>
+            <li>Customized workout plan</li>
+            <li>Nutrition support</li>
+          </ul>
+          <p class="price">$60/month</p>
+          <a href="signup.html" class="btn btn-signup">Book Trainer</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 FitZone Gym. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
